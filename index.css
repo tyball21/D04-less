@@ -1,0 +1,40 @@
+.DashedBorder {
+  border-style: dashed;
+}
+.nav {
+  text-align: center;
+}
+.nav:hover {
+  background-color: #6ae594;
+}
+.button1 {
+  background-color: purple;
+}
+body {
+  background-color: #808000;
+}
+.menu {
+  border-style: dashed;
+  width: 250px;
+  height: 200px;
+}
+.menu-items:hover {
+  background-color: #6ae594;
+}
+.jakes-image {
+  border-style: dashed;
+  border-radius: 9999px;
+  position: relative;
+  left: 400px;
+  bottom: 205px;
+}
+.about {
+  border-right-style: solid;
+  width: 600px;
+  height: 250px;
+}
+.hours {
+  position: relative;
+  left: 690px;
+  bottom: 270px;
+}

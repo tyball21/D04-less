@@ -1,0 +1,73 @@
+@import "vars";
+
+// mixins
+
+.DashedBorder {
+  border-style: dashed;
+}
+
+
+// parametric mixin
+
+.BorderRadius(@radius: 0px) {
+  border-radius: @radius;
+}
+
+// mixin guard
+
+.theme (@a) when (@a = "@mainAccentColor") {
+  background-color: purple;
+}
+
+
+// normal css
+
+.nav {
+  text-align: center;
+
+  &:hover {
+    background-color: @mainAccentColor;
+  }
+}
+
+.button1 {
+  .theme("@mainAccentColor");
+}
+
+body {
+    background-color: grey - #00f;
+}
+
+
+.menu {
+  .DashedBorder;
+  width: 250px;
+  height: 200px;
+
+}
+
+.menu-items {
+  &:hover {
+    background-color: @mainAccentColor;
+  }
+}
+
+.jakes-image {
+  .DashedBorder;
+  .BorderRadius(9999px);
+  position: relative;
+  left: 400px;
+  bottom: 205px;
+}
+
+.about {
+  border-right-style: solid;
+  width: 600px;
+  height: 250px;
+}
+
+.hours{
+  position: relative;
+  left: 690px;
+  bottom: 270px;
+}
